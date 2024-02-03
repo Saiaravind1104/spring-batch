@@ -23,6 +23,10 @@ public class FirstSchedular {
 	@Autowired
 	Job secondJob;
 
+	/*
+	 * Spring schedular is used to schedule
+	 * the batch for every 1min based upon cron
+	 */
 	@Scheduled(cron = "0 0/1 * 1/1 * ?")
 	public void firstSchedular() {
 		try {
